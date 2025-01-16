@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, space;
+
+    
+    for (i = 'A'; i <= 'I'; i++) {
+        printf("%c ", i);
+    }
+    printf("\n");
+
+   
+    for (i = 'A'; i <= 'E'; i++) {
+       
+        for (space = 0; space < i - 'A'; space++) {
+            printf("  ");
+        }
+
+     
+        printf("%c ", i);
+        if (i != 'E') {
+            for (j = 0; j < 'I' - i - 1; j++) {
+                printf("  ");
+            }
+            printf("%c ", 'I' - i + 'A' - 1);
+        }
+        printf("\n");
+    }
+
+    
+    for (i = 'E' - 1; i >= 'A'; i--) {
+       
+        for (space = 0; space < i - 'A'; space++) {
+            printf("  ");
+        }
+
+       
+        printf("%c ", i);
+        if (i != 'E') {
+            for (j = 0; j < 'I' - i - 1; j++) {
+                printf("  ");
+            }
+            printf("%c ", 'I' - i + 'A' - 1);
+        }
+        printf("\n");
+    }
+
+    
+    for (i = 'A'; i <= 'I'; i++) {
+        printf("%c ", i);
+    }
+    printf("\n");
+
+    return 0;
+}
