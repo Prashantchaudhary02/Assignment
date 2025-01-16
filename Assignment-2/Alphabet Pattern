@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,k,n=5;
+    char ch;
+    for(i=1;i<=5;i++){
+            ch='A';
+            for(k=1;k<=i;k++){
+                printf("%c",ch);
+                ch++;
+            }
+        
+        for(k=1;k<=2*(n-i);k++){
+            printf(" ");
+        }
+          ch='A'+i-1;
+            for(j=i;j>=1;j--){
+                printf("%c",ch);
+                ch--;
+            }
+        printf("\n");
+    }
+    return 0;
+}
